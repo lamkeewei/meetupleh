@@ -1,0 +1,17 @@
+<div id="navbar">
+  <div id="navbar-inner">
+    <ul class="nav-links">
+      <li class="brand highlight"><a href="/">Meet Up Leh!</a></li>
+      <li ng-show="currentUser.name"><a href="/events/add">Propose New Event</a></li>
+      <li ng-show="currentUser.name"><a href="">View Pledged</a></li>
+      <li ng-show="currentUser.name"><a href="">View Created</a></li>
+    </ul>
+
+    <ul class="nav-links nav-right">
+      <li ng-show="currentUser.name"><a href="">{{currentUser.name}}</a></li>
+      <li ng-show="currentUser.name"><a href="/profile" ng-click="logout()">Logout</a></li>
+      <li ng-hide="currentUser.name" class="highlight"><a href="/login">Login</a></li>
+      <li ng-hide="currentUser.name" class="highlight"><a href="/signup">Signup</a></li>
+    </ul>
+  </div>
+</div>

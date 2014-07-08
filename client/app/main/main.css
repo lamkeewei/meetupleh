@@ -1,0 +1,100 @@
+body {
+  background-color: rgba(0,0,0,0.025);
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+#map {
+  padding: 0px;
+  margin-top: 50px;
+}
+
+.angular-google-map-container { 
+  height: 250px; 
+}
+
+@media (max-width: 992px){
+  #map {
+    display: none;
+  }
+}
+
+#side-panel {
+  margin-top: 50px;
+  background-color: rgba(0,0,0,0.025);
+  overflow-y: scroll;
+}
+
+#search-controls {
+  background-color: white;
+}
+
+.control-group input:active,
+.control-group input:focus {
+  outline: none;
+}
+
+.control-group textarea:active,
+.control-group textarea:focus {
+  outline: none;
+}
+
+.control-group{
+  padding: 25px 0px;
+  padding-top: 30px;
+  border-bottom: solid rgba(0,0,0,0.1) 1px;
+}
+
+.control-group .param-label {
+  color: rgba(0,0,0,0.6);
+  font-size: 14pt;
+}
+
+@media(max-width: 992px) {
+  .control-group .param-label {    
+    text-align: left;
+  }
+
+}
+
+
+.control-group .param-control input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 14pt;
+}
+
+@media(max-width: 1280px){
+  .control-group .param-label {
+    font-size: 12pt;
+  }
+  .control-group .param-control input {
+    font-size: 12pt;
+  }
+
+  .control-group .param-control textarea {
+    font-size: 12pt; 
+  }
+}
+.control-group .param-control .btn-link:active,
+.control-group .param-control .btn-link:focus,
+.control-group .param-control .btn-link:hover {
+  outline: none;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.control-group .param-control ::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.3);
+}
+
+#search-controls .control-group .param-control :-ms-input-placeholder {
+   color: rgba(0,0,0,0.3);
+}
+
+#search-controls .control-group .param-control :-moz-input-placeholder {
+   color: rgba(0,0,0,0.3);
+}

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="col-md-5" id="map">
+    <google-map responsive-height=".angular-google-map-container" height-offset="50" draggable="true" center="map.center" zoom="map.zoom">
+      <marker coords="{latitude: 1.3, longitude: 103.8}"></marker>
+    </google-map>
+  </div>
+  <div responsive-height height-offset="50" class="col-md-7" id="side-panel">
+    <div class="row" id="search-controls">
+      <div class="col-md-12 control-group">
+        <div class="col-md-2 param-label text-right hidden-xs">
+          Search: 
+        </div>
+        <div class="col-md-9 param-control">
+          <input type="text" placeholder="Enter search here..." autofocus />
+      </div>
+      </div>
+    </div>
+    
+    <div class="row" id="listings">
+      <div listing></div>
+      <div listing></div>
+      <div listing></div>
+      <div listing></div>
+      <div listing></div>
+      <div listing></div>
+    </div>
+  </div>
+</div>

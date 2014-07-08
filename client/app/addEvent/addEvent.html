@@ -1,0 +1,84 @@
+<div id="add-container">  
+  <div class="container-fluid">  
+    <div class="col-md-7" id="add-map">
+      <div id="map-search-panel">hello</div>
+      <google-map responsive-height=".angular-google-map-container" height-offset="50" draggable="true" center="map.center" zoom="map.zoom">
+        <marker coords="{latitude: 1.3, longitude: 103.8}"></marker>
+      </google-map>
+    </div>
+
+    <div responsive-height height-offset="50" class="col-md-5" id="add-form-wrapper">
+      <div class="row" id="add-form">
+        <div class="col-md-12 control-group">
+          <div class="col-md-12 param-label title">
+            Add New Event:
+          </div>
+        </div>
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Title: 
+          </div>
+          <div class="col-md-9 param-control">
+              <input type="text" placeholder="Event title" autofocus />
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Description: 
+          </div>
+          <div class="col-md-9 param-control">
+              <textarea placeholder="Short description about your event"  /></textarea>
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Date: 
+          </div>
+          <div class="col-md-9 param-control">
+              <div id="datepicker">                
+                <datepicker ng-model="dt" min-date="minDate" show-weeks="true"></datepicker>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Start Time: 
+          </div>
+          <div class="col-md-9 param-control">
+              <input type="text" placeholder="What time is it starting?" />
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            End Time: 
+          </div>
+          <div class="col-md-9 param-control">
+              <input type="text" placeholder="What time is it ending?" />
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Location: 
+          </div>
+          <div class="col-md-9 param-control">
+              <input type="text" placeholder="Where is it held at?" />
+          </div>
+        </div>
+
+        <div class="col-md-12 control-group">
+          <div class="col-md-3 param-label text-right">
+            Target: 
+          </div>
+          <div class="col-md-9 param-control">
+              <input type="number" placeholder="How many people?" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

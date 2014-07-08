@@ -1,0 +1,84 @@
+.listing-link {
+  color: black;
+}
+
+.listing-link:active,
+.listing-link:focus,
+.listing-link:hover {
+  text-decoration: none;
+}
+
+.listing-link:hover {
+  color: black;
+}
+
+.listing-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.listing {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background-color: white;
+}
+
+.listing .listing-inner {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  font-size: 10pt;
+}
+
+.listing .listing-inner .listing-img {
+  background-color: aliceblue;
+  height: 200px;
+}
+
+.listing .listing-inner .listing-title {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.listing .listing-inner .listing-title small {  
+  font-weight: normal;
+  font-size: 10pt;
+  color: rgba(0,0,0,0.5);
+}
+
+.listing .listing-inner .listing-title,
+.listing .listing-inner .listing-footer,
+.listing .listing-inner .listing-description {
+  padding: 15px;
+}
+
+.listing .listing-inner .listing-footer div {
+  margin-bottom: 5px;
+}
+
+.listing .listing-inner .listing-description {
+  color: rgba(0,0,0,0.5);
+  padding-bottom: 5px;
+}
+
+.listing .listing-inner .listing-description p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 10px;
+}
+
+.listing .listing-inner .listing-footer .listing-stats {
+  margin-top: 10px;
+}
+
+.listing .listing-inner .listing-footer .listing-stats .figure-block {
+  display: inline-block;
+  padding-top: 5px;
+  width: 60px;
+}
+
+.listing .listing-inner .listing-footer .listing-stats .figure {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 0px;
+}

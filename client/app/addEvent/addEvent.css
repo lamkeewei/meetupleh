@@ -1,0 +1,56 @@
+#add-container {
+  margin-top: 50px;
+}
+
+#map-search-panel {
+  position: absolute;
+  z-index: 999;
+  top: 60;
+  left: 20;
+}
+
+#add-form-wrapper {
+  overflow-y: scroll;
+}
+
+#add-container .container {
+  padding: 0px;
+}
+
+#add-map {
+  padding: 0px;  
+}
+
+@media (max-width: 992px) {
+  #add-map {
+    display: none;
+  }  
+}
+
+#add-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.param-label.title {
+  color: #6F5499;
+  font-weight: bold;
+}
+
+.control-group textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  resize: none;
+  font-size: 14pt;
+}
+
+#datepicker .btn {
+  border: none;
+}
+
+#datepicker .btn:active,
+#datepicker .btn:focus {
+  outline: none;
+}
