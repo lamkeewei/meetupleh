@@ -9,7 +9,7 @@
 
     <ul class="nav-links nav-right">
       <li ng-show="currentUser.name"><a href="">{{currentUser.name}}</a></li>
-      <li ng-show="currentUser.name"><a href="/profile" ng-click="logout()">Logout</a></li>
+      <li ng-show="currentUser.name" class="highlight"><a href="/profile" ng-click="logout()">Logout</a></li>
       <li ng-hide="currentUser.name" class="highlight"><a href="/login">Login</a></li>
       <li ng-hide="currentUser.name" class="highlight"><a href="/signup">Signup</a></li>
     </ul>

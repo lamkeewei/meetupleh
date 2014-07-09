@@ -3,21 +3,22 @@
     <div class="listing">            
       <div class="listing-inner">
         <div class="listing-title">
-          <div>Soccer Game</div>
+          <div>{{listing.title}}</div>
           <div>
-            <small>By Lam Kee Wei</small>
+            <small>{{ listing.date | date: fullDate }}</small>
           </div>              
         </div>
-        <div class="listing-img"></div>
+        <div class="listing-img" style="background-image: url('http://res.cloudinary.com/hccyz6kvw/image/upload/{{listing.imgId}}.jpg')">
+        </div>
         <div class="listing-description">
-          <div class="location"><i class="fa fa-map-marker"></i> Blk 123, Yuhua</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum dolorem ipsum error nulla saepe placeat accusamus, praesentium tenetur, totam.</p>
+          <div class="location"><i class="fa fa-map-marker"></i> {{ listing.location }}</div>
+          <p>{{listing.description}}</p>
         </div>
         <div class="listing-footer">
-          <div><progressbar type="success" max="10" value="6"></progressbar></div>
+          <div><progressbar type="success" max="listing.target" value="listing.pledged"></progressbar></div>
           <div class="listing-stats">
             <div class="figure-block">
-              <div class="figure">60%</div>
+              <div class="figure">{{ getPercentage(listing) }}</div>
               <small>Pledged</small>
             </div>
             <div class="figure-block">

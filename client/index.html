@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
-    <title></title>
+    <title>Meet Up Leh!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -57,6 +57,8 @@
     <![endif]-->
     
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <!--<script src='http://www.onemap.sg/API/JS?accessKEY=Czv98uCsgNkB8/O2fFdh6a9XQzv+RB/xuzcmbQ6ZShypxLc6c5AbLsZhHvjRWt9p9X7SVSGdJjUUVAQTpppNcFYVEUESFCKmwlx51XqQNa6MV650TPuwMw==|mv73ZvjFcSo='></script>-->
+    <script src='http://www.onemap.sg/API/JS?accessKEY=xkg8VRu6Ol+gMH+SUamkRIEB7fKzhwMvfMo/2U8UJcFhdvR4yN1GutmUIA3A6r3LDhot215OVVkZvNRzjl28TNUZgYFSswOi'></script>    
     <!-- build:js(client) app/vendor.js -->
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -70,6 +72,11 @@
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
       <!-- endbower -->
+      <script src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+      <script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+      <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+      <script src="bower_components/cloudinary_js/js/jquery.cloudinary.js"></script>
+      <script src="bower_components/cloudinary_ng/js/angular.cloudinary.js"></script>
     <!-- endbuild -->
 
         <!-- build:js({.tmp,client}) app/app.js -->
@@ -83,6 +90,7 @@
           <script src="app/addEvent/addEvent.js"></script>
           <script src="app/admin/admin.controller.js"></script>
           <script src="app/admin/admin.js"></script>
+          <script src="app/event/event.service.js"></script>
           <script src="app/listing/listing.directive.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>

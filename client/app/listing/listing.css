@@ -82,3 +82,8 @@
   font-size: 12pt;
   margin-bottom: 0px;
 }
+
+.listing-img {
+  background-position: top center;
+  background-size: cover;
+}

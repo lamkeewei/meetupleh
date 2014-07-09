@@ -64,6 +64,8 @@ body {
   width: 100%;
   background-color: transparent;
   border: none;
+  padding-bottom: 10px;
+  border-bottom: solid rgba(0,0,0,0.15) 1px;
   font-size: 14pt;
 }
 
@@ -76,6 +78,10 @@ body {
   }
 
   .control-group .param-control textarea {
+    font-size: 12pt; 
+  }
+
+  .control-group .param-control select {
     font-size: 12pt; 
   }
 }

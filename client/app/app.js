@@ -6,7 +6,8 @@ angular.module('meetuplehApp', [
   'ngSanitize',
   'ui.bootstrap',
   'ngRoute',
-  'google-maps'
+  'google-maps',
+  'cloudinary'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
@@ -42,6 +43,15 @@ angular.module('meetuplehApp', [
         }
       }
     };
+  })
+
+  .factory('_', function($window){
+    return $window._;
+  })
+
+  .run(function(){
+    $.cloudinary.config().cloud_name = 'hccyz6kvw';
+    $.cloudinary.config().upload_preset = 'tj3sk3oz';
   })
 
   .run(function ($rootScope, $location, Auth) {

@@ -3,10 +3,9 @@
 }
 
 #map-search-panel {
-  position: absolute;
-  z-index: 999;
-  top: 60;
-  left: 20;
+  height: 95px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #add-form-wrapper {
@@ -46,6 +45,31 @@
   font-size: 14pt;
 }
 
+.control-group select {
+  width: 100%;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  font-size: 14pt;
+}
+
+#imageUpload {
+  font-size: 10pt;
+  border: none;
+  margin-top: 5px;
+}
+
+@media(max-width: 992px) {
+  .control-group .param-control select {
+    margin-top: 15px;
+  }
+}
+
+.control-group select:active,
+.control-group select:focus {
+  outline: none;
+}
+
 #datepicker .btn {
   border: none;
 }
@@ -53,4 +77,16 @@
 #datepicker .btn:active,
 #datepicker .btn:focus {
   outline: none;
+}
+
+#location {
+  border-bottom: 0px;
+}
+
+#previewImage {
+  width: 100%;
+}
+
+.control-group .param-label.error {
+  color: #cc6055;
 }
