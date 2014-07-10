@@ -1,0 +1,20 @@
+<div id="view-pledged">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Your Pledged Events</h1>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div ng-repeat="pledge in pledges" listing="pledge.eventId"></div>
+    </div>
+
+    <div ng-show="pledges.length < 1" class="row">
+      <div class="col-md-12" id="no-pledge">
+        You have not pledged to any event.
+      </div>
+    </div>
+  </div>
+</div>

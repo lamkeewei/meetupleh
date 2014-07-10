@@ -1,9 +1,9 @@
-<a class="listing-link" href="">  
+<a class="listing-link" ng-href="/events/{{listing._id}}">  
   <div class="col-md-6 listing-wrapper">
     <div class="listing">            
       <div class="listing-inner">
         <div class="listing-title">
-          <div>{{listing.title}}</div>
+          <div class="title">{{listing.title}}</div>
           <div>
             <small>{{ listing.date | date: fullDate }}</small>
           </div>              
@@ -22,7 +22,7 @@
               <small>Pledged</small>
             </div>
             <div class="figure-block">
-              <div class="figure">10</div>
+              <div class="figure">{{listing.daysToEvent}}</div>
               <small>Days to go</small>
             </div>
           </div>

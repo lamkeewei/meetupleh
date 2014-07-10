@@ -37,6 +37,11 @@
   font-size: 14pt;
 }
 
+.listing .listing-inner .listing-title .title{
+  height: 27px;
+  overflow-y: hidden; 
+}
+
 .listing .listing-inner .listing-title small {  
   font-weight: normal;
   font-size: 10pt;
@@ -86,4 +91,9 @@
 .listing-img {
   background-position: top center;
   background-size: cover;
+}
+
+.listing-description p {
+  height: 50px;
+  overflow-y: hidden;
 }

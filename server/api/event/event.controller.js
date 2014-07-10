@@ -16,11 +16,14 @@ exports.index = function(req, res) {
 
 // Get a single event
 exports.show = function(req, res) {
-  Event.findById(req.params.id, function (err, event) {
-    if(err) { return handleError(res, err); }
-    if(!event) { return res.send(404); }
-    return res.json(event);
-  });
+  Event
+    .findById(req.params.id)
+    .populate('creator')
+    .exec(function (err, event) {
+      if(err) { return handleError(res, err); }
+      if(!event) { return res.send(404); }
+      return res.json(event);
+    });
 };
 
 // Creates a new event in the DB.

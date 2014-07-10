@@ -1,0 +1,179 @@
+#view-event-container {
+  margin-top: 50px;
+}
+
+#view-event-container .header {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+#view-event-container .header h1 {
+  font-size: 42pt;
+}
+
+#view-event-container .header .subtext {
+  color: rgba(0,0,0,0.3);
+  font-weight: 200;
+  font-size: 15pt;
+}
+
+@media (max-width: 992px) {
+  #view-event-container .header h1 {
+    font-size: 32pt;
+  }  
+}
+
+#view-event-container .header .col-md-6 {
+  padding-top: 30px;
+}
+
+#view-event-container .card-outer {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background-color: white;
+}
+
+#view-event-container .card {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+#view-event-container .card .card-content {
+  padding: 25px;
+}
+
+#view-event-container .card .card-content .muted{
+  color: rgba(0,0,0,0.7);
+}
+
+
+#view-event-container .card .card-content hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#view-event-container .event-image {
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+}
+
+#view-event-container .panel {
+  background-color: transparent;
+}
+
+#view-event-container .panel .card-outer{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  /*#view-event-container .panel {
+    padding-left: 0px;
+    padding-right: 0px;
+  }  */
+}
+
+#view-event-container .event-stats-block {
+  margin-bottom: 15px;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+#view-event-container .event-stats-block h2{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 42pt;
+}
+
+#view-event-container .event-stats-block p{
+  font-weight: bold;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pledge-btn {
+  width: 100%;
+  border: none;
+  padding: 12.5px;
+  background-color: #6F5499;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#pledge-btn:hover {
+  background-color: #896EB3;
+}
+
+#pledge-btn:hover,
+#pledge-btn:focus,
+#pledge-btn:active {
+  outline: none;
+}
+
+#pledge-btn:disabled {
+  background-color: grey;
+}
+
+#pledge-btn:disabled:hover {
+  background-color: grey;
+}
+
+#unpledge-btn {
+  width: 100%;
+  border: none;
+  padding: 12.5px;
+  background-color: #E67A6F;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#view-event-container .has-pledged-banner {
+  padding: 25px;
+  background-color: #dff0d8;
+  margin-bottom: 20px;
+  border-left: solid 3px #4cae4c;
+  color: #339533;
+}
+
+#comment-input {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-bottom: 10px;
+  font-size: 12pt;
+  border-bottom: solid 1px gainsboro;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#comment-input.error {
+  border-color: #E67A6F; 
+}
+
+#comment-input:active,
+#comment-input:focus {
+  outline: none;
+}
+
+#view-event-container .comment {
+  margin-left: 25px; 
+  border-left: solid 3px rgba(0,0,0,0.2);
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+#view-event-container .comment:last-child {
+  border-bottom: none;
+}
+
+#view-event-container .no-comments-placeholder {
+  color: rgba(0,0,0,0.4);
+  font-size: 12pt;
+}
+
+#view-event-container .remove-circle {
+  cursor: pointer;
+}

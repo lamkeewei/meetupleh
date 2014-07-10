@@ -90,3 +90,7 @@
 .control-group .param-label.error {
   color: #cc6055;
 }
+
+.text-muted {
+  color: rgba(0,0,0,0.25);
+}
