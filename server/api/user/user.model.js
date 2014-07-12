@@ -15,6 +15,7 @@ var UserSchema = new Schema({
   },
   postalCode: String,
   age: Number,
+  gender: String,
   hashedPassword: String,
   provider: String,
   salt: String,

@@ -18,7 +18,8 @@ angular.module('meetuplehApp')
           email: $scope.user.email,
           password: $scope.user.password,
           postalCode: $scope.user.postalCode,
-          age: $scope.user.age
+          age: $scope.user.age,
+          gender: $scope.user.gender
         })
         .then( function() {
           // Account created, redirect to home

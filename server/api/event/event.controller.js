@@ -26,6 +26,18 @@ exports.show = function(req, res) {
     });
 };
 
+// Get user events 
+exports.userEvents = function(req, res) {
+  var creator = req.params.userId;
+  Event
+    .find({ creator: creator})
+    .populate('creator')
+    .exec(function (err, events) {
+      if(err) { return handleError(res, err); }
+      return res.json(200, events);
+    });
+};
+
 // Creates a new event in the DB.
 exports.create = function(req, res) {
   Event.create(req.body, function(err, event) {

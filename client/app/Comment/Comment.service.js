@@ -8,6 +8,13 @@ angular.module('meetuplehApp')
         isArray: true,
         params: {
           type: 'event'
+        }        
+      },
+
+      destroyEvent: {
+        method: 'DELETE',
+        params: {
+          type: 'event'
         }
       }
     });

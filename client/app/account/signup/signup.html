@@ -50,6 +50,20 @@
               </p>
             </div>
 
+            <div class="form-group" ng-class="{ 'has-success': form.gender.$valid && submitted,
+                                                'has-error': form.gender.$invalid && submitted }">
+              <label>Gender</label>
+
+              <select name="gender" class="form-control" ng-model="user.gender" required>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+
+              <p class="help-block" ng-show="form.gender.$error.required && submitted">
+                An age is required
+              </p>
+            </div>
+
             <div class="form-group" ng-class="{ 'has-success': form.email.$valid && submitted,
                                                 'has-error': form.email.$invalid && submitted }">
               <label>Email</label>

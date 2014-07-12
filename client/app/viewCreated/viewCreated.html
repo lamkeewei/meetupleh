@@ -1,0 +1,39 @@
+<div id="created-container" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Your Created Events</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row main-panel">
+    <div ng-show="events.length < 1" class="col-md-12" id="no-created-event">
+      You have not created any event
+    </div>
+    <div ng-repeat="event in events" class="col-md-12">
+      <div class="card-outer">
+        <div class="card">
+          <div class="image col-md-3" bg-img="event.imgId"></div>
+          <div class="card-content col-md-8">
+            <strong class="title">{{event.title}}</strong>
+            <p class="date">{{event.date | date: fullDate}}, {{event.startTime}} - {{event.endTime}}</p>
+            <p class="description">{{event.description}}</p>
+          </div>
+          <div class="card-options col-md-1">
+            <div class="edit-option option">
+              <p>
+                <i class="fa fa-edit"></i>
+              </p>
+            </div>
+            <div ng-click="deleteEvent(event)" class="delete-option option">
+              <p>
+                <i class="fa fa-trash-o"></i>
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>

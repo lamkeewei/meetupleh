@@ -64,7 +64,7 @@
               </div>
 
               <div class="event-stats-block">              
-                <h2>{{event.daysToEvent}}</h2>
+                <h2>{{event.daysToEvent - 1}}</h2>
                 <p>days to event</p>            
               </div>
 
@@ -77,7 +77,7 @@
             </button>
 
           <button ng-show="hasPledged" ng-click="unpledge()" id="unpledge-btn">
-              Click to unpledge!
+              Unpledge!
             </button>
           </div>
         </div>

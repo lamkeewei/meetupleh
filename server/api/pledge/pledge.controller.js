@@ -65,6 +65,14 @@ exports.destroy = function(req, res) {
   });
 };
 
+exports.destroyEvent = function(req, res) {
+  var eventId = req.params.eventId;
+  Pledge.remove({eventId: eventId}, function (err) {
+    if(err) { return handleError(res, err); }
+    return res.send(204);
+  });
+};
+
 function handleError(res, err) {
   return res.send(500, err);
 }
